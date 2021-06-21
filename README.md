@@ -21,5 +21,12 @@ Some features within this repository shall ensure that the [training data](https
 This repository also contains features which shall support you when it comes to literature research by granting access to the [Scientific Purpose Web Harvester]().
 
 
+## For Developers and Contributors
+If you want to start the svelte based DHBW Chatbot locally, you can:
+```sh 
+cd dhbw-chatbot
+trex run start
+```
+
 
 

@@ -1,5 +1,7 @@
 
 
+import axiod from "https://deno.land/x/axiod/mod.ts";
+
 export interface QA {
     q: string,
     a: string
@@ -19,14 +21,36 @@ export interface Answer {
 
 export class TrainingDataParser {
 
-    public getQAPairsFromMarkDown(trainingDataAsMarkDown: any): QA[] {
+    public async getQAPairsFromMarkDown(): Promise<QA[]> {
+        const urlToTrainingDataMarkdown = "https://raw.githubusercontent.com/michael-spengler/DHBW-KI/main/training-data.md"
 
         const qaPairs: QA[] = []
 
-        
+        const tdAsMarkdown = (await axiod.get(urlToTrainingDataMarkdown)).data
+
+        const topicAreaUnits = tdAsMarkdown.split("\n## ")
+
+        console.log(topicAreaUnits.length)
+
+        for (const topicAreaUnit of topicAreaUnits) {
+            const informationUnits = topicAreaUnit.split("\n###")
+
+            console.log(`informationUnitsLength: ${informationUnits.length}`)
+            if (informationUnits.length === 1) { // could be investigated why this exists...
+                console.log(JSON.stringify(informationUnits)) 
+            } else {
+                for (const informationUnit of informationUnits) {
+                    const qaPair: QA = {
+                        q: informationUnit.split('\n')[0],
+                        a: informationUnit.split('\n')[1],
+                    }
+
+                    qaPairs.push(qaPair)
+                }
+            }
+        }
 
         return qaPairs
-
     }
 
     public getDocuments(qaPairs: QA[]): Document[] {
@@ -67,16 +91,4 @@ export class TrainingDataParser {
 
 
 }
-
-
-const tP = new TrainingDataParser()
-
-tP.getQAPairsFromFFCContent(undefined, "https://raw.githubusercontent.com/fancy-flashcard/deck-collection/main/wirtschaftsinformatik/Finanzbuchhaltung.json")
-    .then((result) => {
-
-        const markdown = tP.getMarkdownFromQAPairs(result)
-        console.log(markdown)
-        // Deno.writeTextFile("./hello.md", markdown)
-    })
-
 
