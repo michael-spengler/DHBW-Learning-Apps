@@ -1,12 +1,34 @@
 <script>
+    import { onMount } from "svelte";
     export let messages;
+
+    let completelyWritten = false;
+
+    let textInProgress = "";
+
+    onMount(async () => {
+        let counter = 0;
+        const intervalId = setInterval(() => {
+            counter++;
+            textInProgress = messages[0].text.substr(0, counter);
+        }, 20);
+
+        if (textInProgress === messages[0].text) {
+            completelyWritten = true
+            counter = 0
+        }
+    });
 </script>
 
 <div class="messageBox">
     {#each messages as message}
         {#if message.bot}
             <div class="messageByBot">
-                {message.text}
+                {#if completelyWritten || message.text !== messages[0].text}
+                    {message.text}
+                {:else}
+                    {textInProgress}
+                {/if}
             </div>
         {:else}
             <div class="messageByUser">
@@ -14,7 +36,6 @@
             </div>
         {/if}
     {/each}
-
 </div>
 
 <style>

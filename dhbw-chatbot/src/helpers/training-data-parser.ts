@@ -30,14 +30,14 @@ export class TrainingDataParser {
 
         const topicAreaUnits = tdAsMarkdown.split("\n## ")
 
-        console.log(topicAreaUnits.length)
+        // console.log(topicAreaUnits.length)
 
         for (const topicAreaUnit of topicAreaUnits) {
             const informationUnits = topicAreaUnit.split("\n###")
 
-            console.log(`informationUnitsLength: ${informationUnits.length}`)
+            // console.log(`informationUnitsLength: ${informationUnits.length}`)
             if (informationUnits.length === 1) { // could be investigated why this exists...
-                console.log(JSON.stringify(informationUnits)) 
+                // console.log(JSON.stringify(informationUnits)) 
             } else {
                 for (const informationUnit of informationUnits) {
                     const qaPair: QA = {

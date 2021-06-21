@@ -1,7 +1,7 @@
 # DHBW Learning Apps
 This repository connects learning apps which have been developed by DHBW students as Open Source Projects.  
 
-The [training data](https://github.com/michael-spengler/DHBW-KI/blob/main/training-data.md) is a key common ressource which is used by most of those learning- and exploration apps. 
+The [training data](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/main/training-data.md) is a key common ressource which is used by most of those learning- and exploration apps. 
 
 ## Learning Flavours
 
