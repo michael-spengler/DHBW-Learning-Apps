@@ -19,16 +19,14 @@ export interface Answer {
 
 export class DataAdapter {
 
-    public async getQAPairsFromFFCContent(trainingDataAsFFCData?: any, ffcContentURL?: string): Promise<QA[]> {
+    public async getQAPairsFromFFCContent(ffcContentURL: string): Promise<QA[]> {
 
         let trainingDataAsFFCContent
-        if (ffcContentURL === undefined) {
-            trainingDataAsFFCContent = trainingDataAsFFCData
-        } else {
             trainingDataAsFFCContent = await (await fetch(ffcContentURL)).json()
-        }
 
         const qaPairs: QA[] = []
+
+        console.log(JSON.stringify(trainingDataAsFFCContent))
 
         for (const d of Object.keys(trainingDataAsFFCContent.decks)) {
             console.log(Object.keys(trainingDataAsFFCContent.decks))
@@ -47,8 +45,10 @@ export class DataAdapter {
 
     }
 
-    public getMarkdownFromQAPairs(qaPairs: QA[]): string {
-        let mdString = ""
+    public getMarkdownFromQAPairs(qaPairs: QA[], headline: string): string {
+        let mdString = `
+## ${headline}  
+`
 
         for (const pair of qaPairs) {
             let entity =
