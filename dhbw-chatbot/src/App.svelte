@@ -10,6 +10,9 @@
   // const { containerBootstrap } = require("@nlpjs/core");
   // const { Nlp } = require("@nlpjs/nlp");
   // const { LangEn } = require("@nlpjs/lang-en-min");
+  // import nlpjsCore from 'https://cdn.skypack.dev/@nlpjs/core';
+  import { containerBootstrap } from 'https://cdn.skypack.dev/@nlpjs/core';
+  import { Nlp } from 'https://cdn.skypack.dev/@nlpjs/nlp';
 
   const sendMessage = (textInput) => {
     const newMessages = messages;
@@ -46,7 +49,7 @@
     (async () => {
       const container = await containerBootstrap();
       container.use(Nlp);
-      container.use(LangEn);
+      // container.use(LangEn);
       const nlp = container.get("nlp");
       nlp.settings.autoSave = false;
       nlp.addLanguage("de");
