@@ -1,17 +1,16 @@
-# DHBW KI
-This repository defines and creates an artificial intelligence which shall support DHBW students in their exploration- / learning process. 
+# DHBW Learning Apps
+This repository connects learning apps which have been developed by DHBW students as Open Source Projects.  
 
-One of its features is the [DHBW Chatbot]() which is trained by [this training data](https://github.com/michael-spengler/DHBW-KI/blob/main/training-data.md). 
+The [training data](https://github.com/michael-spengler/DHBW-KI/blob/main/training-data.md) is a key common ressource which is used by most of those learning- and exploration apps. 
 
 ## Learning Flavours
-Some features within this repository shall ensure that the [training data](https://github.com/michael-spengler/DHBW-KI/blob/main/training-data.md) can also be used in other DHBW learning apps. 
 
 ### Flashcard based Learning
 [Fancy Flashcard App](https://github.com/fancy-flashcard/ffc#readme)
 
 ### Visual Chatbot and Audio Chatbot based Learning
-[Visual DHBW Chatbot]()  
-[Audio DHBW Chatbot]() (under construction)
+[Visual DHBW Chatbot](https://fancy-flashcard.github.io/DHBW-KI/)  
+[Audio DHBW Chatbot](https://fancy-flashcard.github.io/DHBW-KI/) (under construction)
 
 ### Study Group based Learning
 [Study Groups Competition App]() (under construction).
