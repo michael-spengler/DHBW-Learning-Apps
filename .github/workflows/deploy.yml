@@ -21,11 +21,11 @@ jobs:
         run: |
           cd dhbw-chatbot
           deno run --allow-run --allow-read https://deno.land/x/snel/install.ts
-          trex run build
+#          trex run build // waiting until issues are solved
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3 # https://github.com/marketplace/actions/deploy-to-github-pages
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: data-adapter/dist
+#      - name: Deploy
+#        uses: JamesIves/github-pages-deploy-action@releases/v3 # https://github.com/marketplace/actions/deploy-to-github-pages
+#        with:
+#          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#          BRANCH: gh-pages
+#          FOLDER: data-adapter/dist
