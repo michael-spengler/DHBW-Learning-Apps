@@ -9,8 +9,8 @@ The [training data](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/
 [Fancy Flashcard App](https://github.com/fancy-flashcard/ffc#readme)
 
 ### Visual Chatbot and Audio Chatbot based Learning
-[Visual DHBW Chatbot](https://fancy-flashcard.github.io/DHBW-KI/)  
-[Audio DHBW Chatbot](https://fancy-flashcard.github.io/DHBW-KI/) (under construction)
+[Visual DHBW Chatbot](https://michael-spengler.github.io/DHBW-Learning-Apps/)  
+[Audio DHBW Chatbot](https://michael-spengler.github.io/DHBW-Learning-Apps/) (under construction)
 
 ### Study Group based Learning
 [Study Groups Competition App]() (under construction).
