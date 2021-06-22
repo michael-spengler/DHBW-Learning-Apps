@@ -3,7 +3,6 @@
   import InputArea from "@/components/InputArea.svelte";
   import { onMount } from "svelte";
   import { TrainingDataParser } from "./helpers/training-data-parser.ts";
-
   import { containerBootstrap } from "https://cdn.skypack.dev/@nlpjs/core";
   import { Nlp } from "https://cdn.skypack.dev/@nlpjs/nlp";
 
