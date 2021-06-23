@@ -5,27 +5,23 @@ The [training data](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/
 
 ## Learning Flavours
 
-### Flashcard based Learning
+### DHBW Flashcards based Learning
 [Fancy Flashcard App](https://github.com/fancy-flashcard/ffc#readme)
 
-### Visual Chatbot and Audio Chatbot based Learning
+### DHBW Chatbot based Learning
 [Visual DHBW Chatbot](https://michael-spengler.github.io/DHBW-Learning-Apps/)  
+
+### DHBW Audio Chatbot based Learning
 [Audio DHBW Chatbot](https://michael-spengler.github.io/DHBW-Learning-Apps/) (under construction)
 
 ### Study Group based Learning
 [Study Groups Competition App]() (under construction).
 
-
 ## Scientific Papers
-This repository also contains features which shall support you when it comes to literature research by granting access to the [Scientific Purpose Web Harvester](https://github.com/SimonScapan/scientific-purpose-harvester).
+The [Scientific Purpose Web Harvester](https://github.com/SimonScapan/scientific-purpose-harvester) supports you when it comes to literature research and gives you the chance to draft / generate question and answer pairs for a specific topic automatically.
 
 
-## For Developers and Contributors
-If you want to start the svelte based DHBW Chatbot locally, you can:
-```sh 
-cd dhbw-chatbot
-trex run start
-```
-
-
+## Contributions
+The quality of most of the mentioned DHBW Learning Apps is mainly influenced by the quality of the underlying [training data](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/main/training-data.md).  
+Every lecturer is invited to optimize the training data by raising a Pull Request.
 
