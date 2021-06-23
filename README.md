@@ -17,7 +17,7 @@ The [training data](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/
 
 
 ## Scientific Papers
-This repository also contains features which shall support you when it comes to literature research by granting access to the [Scientific Purpose Web Harvester]().
+This repository also contains features which shall support you when it comes to literature research by granting access to the [Scientific Purpose Web Harvester](https://github.com/SimonScapan/scientific-purpose-harvester).
 
 
 ## For Developers and Contributors
