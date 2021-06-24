@@ -34,7 +34,7 @@ If there are however good reasons to split the information into several training
 
 ## Roadmap
 ### Holistic Data Adapter
-A holistic data adapter which could make sure that the transformation of the trainingdata from and to the DHBW Learning Apps format (which is basically a list of question and answer pairs) would be pretty beneficial in order to improve the interoperability with other Open Source Learning Applications.
+A holistic data adapter could transform trainingdata from and to the DHBW Learning Apps format (which is basically a list of question and answer pairs). This could be beneficial in order to improve the interoperability with other Open Source Learning Applications.
 
 ### Audio Chatbot
 Maybe this could be a part of the lecture series for WWI20DSA - 'Web-Programmierung (15.11.2021 - 11.02.2022, 3. Semester).
