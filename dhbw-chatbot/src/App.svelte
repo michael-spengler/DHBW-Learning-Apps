@@ -15,7 +15,7 @@
     messages = newMessages;
 
     getResponse(textInput).then((responseFromBot) => {
-      newMessages.push({ bot: true, text: responseFromBot });
+      newMessages.push({ bot: true, text: responseFromBot  });
       messages = newMessages;
     });
   };
@@ -83,7 +83,18 @@
 
     const response = await nlp.process("de", input);
 
-    return response.answer;
+    console.log(response)
+
+    if (response.answer === undefined) {
+      if (response.classifications[0].score > 0.3){
+        return getResponse(response.classifications[0].intent)
+      }
+    }
+
+    if (response.answer === undefined) {
+      return `Das genutzte lightweight NLP Modell konnte deine Absicht nicht einordnen.`;
+    }
+    return `"${response.classifications[0].intent}"\n--> ${response.answer}`;
   }
 </script>
 

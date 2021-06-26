@@ -41,8 +41,8 @@ export class TrainingDataParser {
             } else {
                 for (const informationUnit of informationUnits) {
                     const qaPair: QA = {
-                        q: informationUnit.split('\n')[0],
-                        a: informationUnit.split('\n')[1],
+                        q: informationUnit.split('\n')[0].trim(),
+                        a: informationUnit.split('\n')[1].trim(),
                     }
 
                     qaPairs.push(qaPair)
@@ -58,6 +58,7 @@ export class TrainingDataParser {
 
         for (const qaPair of qaPairs) {
 
+            // console.log(qaPair.q)
             const document: Document = {
                 lang: 'de',
                 utterance: qaPair.q,
