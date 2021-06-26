@@ -5,27 +5,42 @@ The [training data](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/
 
 ## Learning Flavours
 
-### Flashcard based Learning
+### Flashcards based Learning
 [Fancy Flashcard App](https://github.com/fancy-flashcard/ffc#readme)
 
-### Visual Chatbot and Audio Chatbot based Learning
+### Chatbot based Learning
 [Visual DHBW Chatbot](https://michael-spengler.github.io/DHBW-Learning-Apps/)  
+
+### Audio Chatbot based Learning
 [Audio DHBW Chatbot](https://michael-spengler.github.io/DHBW-Learning-Apps/) (under construction)
 
 ### Study Group based Learning
 [Study Groups Competition App]() (under construction).
 
-
 ## Scientific Papers
-This repository also contains features which shall support you when it comes to literature research by granting access to the [Scientific Purpose Web Harvester]().
+The [Scientific Purpose Web Harvester](https://github.com/SimonScapan/scientific-purpose-harvester) supports you when it comes to literature research and gives you the chance to draft / generate question and answer pairs for a specific topic automatically.
 
 
-## For Developers and Contributors
-If you want to start the svelte based DHBW Chatbot locally, you can:
-```sh 
-cd dhbw-chatbot
-trex run start
-```
+## Contribute
+The quality of most of the mentioned DHBW Learning Apps is mainly influenced by the quality of the underlying [training data](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/main/training-data.md).  
+Every lecturer is invited to 
+1. Fork this repository  
+2. Optimize the [training data](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/main/training-data.md) 
+3. Raise a Pull Request to ensure the changes come back to this main DHBW training data repository
+  
+The plan is to have one [training data file](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/main/training-data.md) across several study paths to support interdisciplinary exploration and collaboration. 
+
+If there are however good reasons to split the information into several training data files (e.g. performance reasons reg. the NLP training...) we could also do so. 
+
+## Roadmap
+### Holistic Data Adapter
+A holistic data adapter could transform trainingdata from and to the DHBW Learning Apps format (which is basically a list of question and answer pairs). This could be beneficial in order to improve the interoperability with other Open Source Learning Applications.
+
+### Audio Chatbot
+Maybe this could be a part of the lecture series for WWI20DSA - 'Web-Programmierung (15.11.2021 - 11.02.2022, 3. Semester).
+
+### Study Group Feature for FFC
+Consider copying --> adding Lukas Blank's approach to https://github.com/fancy-flashcard/ffc-extended. 
 
 
 
