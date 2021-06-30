@@ -18,7 +18,7 @@ The [training data](https://github.com/michael-spengler/DHBW-Learning-Apps/blob/
 [Study Groups Competition App]() (under construction).
 
 ## Scientific Papers
-The [Scientific Purpose Web Harvester](https://github.com/SimonScapan/scientific-purpose-harvester) supports you when it comes to literature research and gives you the chance to draft / generate question and answer pairs for a specific topic automatically.
+The [Scientific Purpose Web Harvester](http://85.214.28.167:5001/) supports you when it comes to literature research and gives you the chance to draft / generate question and answer pairs for a specific topic automatically. The SCP is also recommended in [DHBW-Wissenschaftliche-Arbeiten](https://github.com/michael-spengler/DHBW-Wissenschaftliche-Arbeiten/blob/main/README.md). If you want to improve the SCP, you can find the repository [here](https://github.com/SimonScapan/scientific-purpose-harvester).
 
 
 ## Contribute
